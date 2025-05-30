@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logo.png" type="Rijzen Logo.png">
+    <link rel="icon" href="logo.png" type="Rijzen-Logo/png">
     <title>Rijzen</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -60,7 +60,34 @@
             overflow-x: hidden;
             position: relative;
         }
+        .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.logo-img {
+    height: 30px; /* Adjust as needed */
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.1);
+}
+
+.logo span {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+.logo:hover span {
+    color: var(--primary-purple);
+    transform: scale(1.05);
+}
         /* ELEGANT CURSOR SYSTEM */
         .cursor {
             position: fixed;
@@ -1435,7 +1462,10 @@
     <!-- Improved Transparent Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">RIJZEN</a>
+            <a href="#home" class="logo">
+                <img src="your-logo.png" alt="Rijzen Logo" class="logo-img">
+                <span>RIJZEN</span>
+            </a>
             
             <!-- Desktop Menu -->
             <ul class="nav-menu" id="nav-menu">
