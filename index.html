@@ -237,21 +237,25 @@
         }
 
         @media (max-width: 768px) {
-  .contact-grid {
-    display: flex;
-    flex-direction: column;
-  }
+      .contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
+}
 
-  .contact-cards {
-    order: 1;
-  }
+.contact-grid > div:first-child {
+  order: 1;
+}
 
-  .contact-form-container {
-    order: 2;
-    padding: 2rem 1.5rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
+.contact-form-container {
+  order: 2;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
 }
 
 
@@ -1664,7 +1668,7 @@
 <section id="contact" class="contact">
     <h2 class="section-title gradient fade-in" data-text="CONTACT">CONTACT</h2>
     
-    <div class="contact-grid" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.7fr; gap: 3rem; padding: 0 2rem;">
+    <div class="contact-grid">
         <!-- Left Side - Contact Details -->
         <div style="display: flex; flex-direction: column; gap: 2rem;">
             <div class="contact-card slide-in-left">
