@@ -238,20 +238,22 @@
 
         @media (max-width: 768px) {
   .contact-grid {
-    grid-template-columns: 1fr !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-cards {
+    order: 1;
   }
 
   .contact-form-container {
-    padding: 2rem 1.5rem !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    order: 2;
+    padding: 2rem 1.5rem;
+    width: 100%;
     box-sizing: border-box;
   }
-
-  .contact-form-container form {
-    width: 100%;
-  }
 }
+
 
 
         .mobile-menu-toggle span {
