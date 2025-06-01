@@ -236,6 +236,24 @@
             flex-shrink: 0;
         }
 
+        @media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-form-container {
+    padding: 2rem 1.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .contact-form-container form {
+    width: 100%;
+  }
+}
+
+
         .mobile-menu-toggle span {
             width: 25px;
             height: 3px;
