@@ -236,30 +236,6 @@
             flex-shrink: 0;
         }
 
-        @media (max-width: 768px) {
-      .contact-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.contact-grid > div:first-child {
-  order: 1;
-}
-
-.contact-form-container {
-  order: 2;
-  width: 100%;
-  max-width: 100%;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
-}
-
-}
-
-
-
         .mobile-menu-toggle span {
             width: 25px;
             height: 3px;
@@ -1577,6 +1553,7 @@
     <section id="portfolio" class="portfolio">
         <h2 class="section-title gradient fade-in" data-text="PORTFOLIO">PORTFOLIO</h2>
         <div class="portfolio-grid">
+            <a href="ktuguide/index.html" style="text-decoration: none; color: inherit;">
             <div class="portfolio-item fade-in">
                 <div class="portfolio-image">
                     <img src="ktu.png" alt="KTU Guide">
@@ -1589,7 +1566,9 @@
                     <p>Comprehensive web solution designed to help KTU students navigate their academic journey with ease and efficiency.</p>
                 </div>
             </div>
+            </a>
             
+            <a href="neighborhood/" style="text-decoration: none; color: inherit;">
             <div class="portfolio-item fade-in">
                 <div class="portfolio-image">
                     <img src="neighborhood.png" alt="Neighborhood Connect" width="400" height="250">
@@ -1602,6 +1581,7 @@
                     <p>Community-focused platform that brings neighbors together, fostering local connections and enhancing neighborhood engagement.</p>
                 </div>
             </div>
+            </a>
         </div>
     </section>
 
@@ -1668,7 +1648,7 @@
 <section id="contact" class="contact">
     <h2 class="section-title gradient fade-in" data-text="CONTACT">CONTACT</h2>
     
-    <div class="contact-grid">
+    <div class="contact-grid" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.7fr; gap: 3rem; padding: 0 2rem;">
         <!-- Left Side - Contact Details -->
         <div style="display: flex; flex-direction: column; gap: 2rem;">
             <div class="contact-card slide-in-left">
@@ -1709,11 +1689,6 @@
                     <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--text-medium);">Your Email</label>
                     <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px; font-family: 'Inter', sans-serif;">
                 </div>
-
-                 <div style="margin-bottom: 1.5rem;">
-                    <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--text-medium);">Your Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px; font-family: 'Inter', sans-serif;">
-                </div>
                 
                 <!-- Wider Package Selector -->
                 <div style="margin-bottom: 1.5rem;">
@@ -1753,7 +1728,6 @@
             <a href="#"><i class="fab fa-behance"></i></a>
         </div>
         <p>© 2024 Rijzen. All rights reserved. Crafted with passion for amazing clients.</p>
-        <p><a href="terms/" style="color: #ccc; text-decoration: underline;">Terms & Conditions</a></p>
     </footer>
 
     <!-- Floating Action Button -->
