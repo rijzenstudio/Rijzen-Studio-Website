@@ -1360,10 +1360,19 @@
             .portfolio-grid,
             .pricing-grid,
             .contact-grid {
-                grid-template-columns: 1fr;
-                padding: 0 1rem;
-                gap: 1.5rem;
-            }
+                display: flex;
+                flex-direction: column;
+              }
+
+  .contact-info-section {
+    order: 1;
+  }
+
+  .contact-form-section {
+    order: 2;
+    width: 100%;
+  }
+}
 
             .service-card:hover,
             .portfolio-item:hover,
