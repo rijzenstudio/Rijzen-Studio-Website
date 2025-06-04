@@ -1655,77 +1655,76 @@
 
     <!-- Contact Section with Wider Form Fields -->
 <section id="contact" class="contact">
-    <h2 class="section-title gradient fade-in" data-text="CONTACT">CONTACT</h2>
-    
-    <div class="contact-grid" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.7fr; gap: 3rem; padding: 0 2rem;">
-        <!-- Left Side - Contact Details -->
-        <div style="display: flex; flex-direction: column; gap: 2rem;">
-            <div class="contact-card slide-in-left">
-                <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <h3>Our Location</h3>
-                <p>Fort Kochi<br>India</p>
-            </div>
-            <div class="contact-card fade-in">
-                <div class="contact-icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <h3>Phone Number</h3>
-                <p>+91 8848610217<br>Mon - Fri: 9AM - 6PM<br>Weekend: By Appointment<br></p>
-            </div>
-            <div class="contact-card slide-in-right">
-                <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <h3>Email Address</h3>
-                <p>rijzenstudio@gmail.com</p>
-            </div>
+  <h2 class="section-title gradient fade-in" data-text="CONTACT">CONTACT</h2>
+
+  <div class="contact-grid">
+    <!-- Contact Info Section -->
+    <div class="contact-info-section">
+      <div class="contact-card slide-in-left">
+        <div class="contact-icon">
+          <i class="fas fa-map-marker-alt"></i>
         </div>
-        
-        <!-- Right Side - Wider Form -->
-        <div class="contact-form-container fade-in" style="background: var(--bg-light); padding: 3rem; border-radius: 25px; box-shadow: 0 10px 30px var(--shadow-light); max-width: 650px; width: 100%;">
-            <form id="contact-form" action="https://formspree.io/f/xkgbwazk" method="POST">
-                <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem; color: var(--primary-blue);">Get in Touch</h3>
-                
-                <!-- Wider Name and Email Fields -->
-                <div style="margin-bottom: 1.5rem;">
-                    <label for="name" style="display: block; margin-bottom: 0.5rem; color: var(--text-medium);">Your Name</label>
-                    <input type="text" id="name" name="name" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px; font-family: 'Inter', sans-serif;">
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                    <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--text-medium);">Your Email</label>
-                    <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px; font-family: 'Inter', sans-serif;">
-                </div>
-                
-                <!-- Wider Package Selector -->
-                <div style="margin-bottom: 1.5rem;">
-                    <label for="package" style="display: block; margin-bottom: 0.5rem; color: var(--text-medium);">Package Interest</label>
-                    <select id="package" name="package" style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px; font-family: 'Inter', sans-serif;">
-                        <option value="">Select a package</option>
-                        <option value="Starter Web (₹2,499)">Starter Web (₹2,499)</option>
-                        <option value="Growth Web (₹3,499)">Growth Web (₹3,499)</option>
-                        <option value="Pro Web (₹4,999)">Pro Web (₹4,999)</option>
-                        <option value="Premium Web (₹6,999)">Premium Web (₹6,999)</option>
-                        <option value="Custom Package">Custom Package</option>
-                    </select>
-                </div>
-                
-                <!-- Wider Message Field -->
-                <div style="margin-bottom: 2rem;">
-                    <label for="message" style="display: block; margin-bottom: 0.5rem; color: var(--text-medium);">Your Project Details</label>
-                    <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px; font-family: 'Inter', sans-serif;"></textarea>
-                </div>
-                
-                <!-- Submit Button -->
-                <button type="submit" style="display: block; width: 100%; padding: 1.2rem; background: var(--gradient-primary); color: white; border: none; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;">
-                    SEND MESSAGE
-                </button>
-            </form>
+        <h3>Our Location</h3>
+        <p>Fort Kochi<br>India</p>
+      </div>
+
+      <div class="contact-card fade-in">
+        <div class="contact-icon">
+          <i class="fas fa-phone"></i>
         </div>
+        <h3>Phone Number</h3>
+        <p>+91 8848610217<br>Mon - Fri: 9AM - 6PM<br>Weekend: By Appointment</p>
+      </div>
+
+      <div class="contact-card slide-in-right">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email Address</h3>
+        <p>rijzenstudio@gmail.com</p>
+      </div>
     </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-section contact-form-container fade-in" style="background: var(--bg-light); padding: 3rem; border-radius: 25px; box-shadow: 0 10px 30px var(--shadow-light); max-width: 650px; width: 100%;">
+      <form id="contact-form" action="https://formspree.io/f/xkgbwazk" method="POST">
+        <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem; color: var(--primary-blue);">Get in Touch</h3>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="name" style="display: block; margin-bottom: 0.5rem;">Your Name</label>
+          <input type="text" id="name" name="name" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="email" style="display: block; margin-bottom: 0.5rem;">Your Email</label>
+          <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="package">Package Interest</label>
+          <select id="package" name="package" style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px;">
+            <option value="">Select a package</option>
+            <option value="Starter Web (₹2,499)">Starter Web (₹2,499)</option>
+            <option value="Growth Web (₹3,499)">Growth Web (₹3,499)</option>
+            <option value="Pro Web (₹4,999)">Pro Web (₹4,999)</option>
+            <option value="Premium Web (₹6,999)">Premium Web (₹6,999)</option>
+            <option value="Custom Package">Custom Package</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <label for="message" style="display: block; margin-bottom: 0.5rem;">Your Project Details</label>
+          <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-light); border-radius: 10px;"></textarea>
+        </div>
+
+        <button type="submit" style="width: 100%; padding: 1.2rem; background: var(--gradient-primary); color: white; border: none; border-radius: 50px; font-weight: 600; font-size: 1rem;">
+          SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
+
 
     <!-- Footer -->
     <footer class="footer">
